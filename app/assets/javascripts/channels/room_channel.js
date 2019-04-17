@@ -17,6 +17,7 @@ $(function() {
           content.find('[data-role="user-avatar"]').attr('src', data.user_avatar_url);
           content.find('[data-role="message-text"]').text(data.message);
           content.find('[data-role="message-date"]').text(data.updated_at);
+          content.find('[data-role="message-date"]').attr('date-time', data.updated_at);
           content.find('[data-role="user-username"]').text(data.username);
           $element.append(content);
           $element.animate({ scrollTop: $element.prop("scrollHeight")}, 1000);

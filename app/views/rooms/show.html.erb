@@ -24,8 +24,8 @@
                 </p>
 
                 <div class="text-right">
-                  <small>
-                    <%= time_ago_in_words(room_message.created_at) %>
+                  <small date-time="<%= room_message.created_at %>" class="timestring">
+                    <%= room_message.created_at %>
                   </small>
                 </div>
               </div>
@@ -66,7 +66,7 @@
           <p class="mb-1" data-role="message-text"></p>
 
           <div class="text-right">
-            <small data-role="message-date"></small>
+            <small class="timestring" date-time="" data-role="message-date"></small>
           </div>
         </div>
       </div>
