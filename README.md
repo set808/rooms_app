@@ -1,24 +1,22 @@
-# README
+# Rooms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rooms is a simple real-time chatroom application that I built in order to learn more about Rails developement. I used the devise gem to handle authentication and ActionCable to handle the real-time functionality.
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+```
+ruby 2.6.2
+rails 5.2.3
+```
 
-* System dependencies
+## Installation
 
-* Configuration
+To install required gems:
+```
+bundle install
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run app:
+```
+rails s
+```
